@@ -1,1 +1,46 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portail Évaluations Alyzia</title>
+    <style>
+        :root { --blue: #004595; --bg: #f4f7f6; }
+        body { font-family: 'Segoe UI', sans-serif; background: var(--bg); display: flex; flex-direction: column; align-items: center; padding: 40px 20px; }
+        .logo { width: 180px; margin-bottom: 20px; }
+        .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 25px; max-width: 1000px; width: 100%; }
+        .card { 
+            background: white; border-radius: 15px; padding: 30px; text-align: center; 
+            box-shadow: 0 10px 20px rgba(0,0,0,0.08); transition: 0.3s; 
+            border-top: 5px solid var(--blue); cursor: pointer; text-decoration: none; color: #333; 
+        }
+        .card:hover { transform: translateY(-10px); box-shadow: 0 15px 30px rgba(0,0,0,0.15); }
+        .icon { font-size: 3rem; margin-bottom: 15px; }
+        h3 { color: var(--blue); margin: 10px 0; }
+    </style>
+</head>
+<body>
+    <img src="alyzia-logo.png" alt="Alyzia" class="logo">
+    <h1>Portail Évaluations & Formulaires</h1>
 
+    <div class="grid">
+        <a href="https://dgr-yh51.onrender.com" class="card">
+            <div class="icon">✈️</div>
+            <h3>DGR 7.5 Passage</h3>
+            <p>Évaluation pratique Marchandises Dangereuses.</p>
+        </a>
+
+        <a href="https://qse-fo-185-v01-compte-rendu-d-evenement.onrender.com" class="card">
+            <div class="icon">📝</div>
+            <h3>Compte Rendu d'Événement</h3>
+            <p>Formulaire QSE-FO-185-V01.</p>
+        </a>
+
+        <a href="https://formulaire-paxi-alyzia.onrender.com" class="card">
+            <div class="icon">⚠️</div>
+            <h3>Passagers Perturbateurs</h3>
+            <p>Formulaire QSE-FO-320-V02.</p>
+        </a>
+    </div>
+</body>
+</html>
